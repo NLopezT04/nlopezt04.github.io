@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Personal Portfolio Website Design | Néstor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Portfolio | Néstor López Torres</title>
+    <meta-description>Página web personal de Néstor López Torres. La página muestra la siguiente información sobre él: formación, conocimientos, portfolio y contacto.</meta-description>
 
     <!-- box icons -->
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
@@ -37,37 +38,62 @@
         <h1>Néstor López Torres</h1>
         <h3>Y soy <span class="multiple-text"></span></h3>
         <div class="social-media">
-          <a href="mailto:nestor.lopez.dev@gmail.com"><i class="bx bxl-gmail"></i></a>
-          <a href="https://www.linkedin.com/in/n%C3%A9stor-l%C3%B3pez-torres-9801052a4/"><i class="bx bxl-linkedin"></i></a>
-          <a href="https://github.com/NLopezT04?tab=repositories"><i class="bx bxl-github"></i></a>         
+          <a title="mail" href="mailto:nestor.lopez.dev@gmail.com"><i class="bx bxl-gmail"></i></a>
+          <a title="linkedin" rel="noopener" href="https://www.linkedin.com/in/n%C3%A9stor-l%C3%B3pez-torres-160a02161/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+          <a title="github" rel="noopener" href="https://github.com/NLopezT04" target="_blank"><i class="bx bxl-github"></i></a>         
         </div>
-        <a href="https://drive.google.com/file/d/1T03W5PhVdcKcDenW3VCK9pFRwdU3KaPd/view?usp=drive_link" class="btn">Descargar CV</a>
+        <a title="cv" rel="noopener" href="https://drive.google.com/file/d/1T03W5PhVdcKcDenW3VCK9pFRwdU3KaPd/view?usp=drive_link" class="btn" target="_blank">Descargar CV</a>
       </div>
 
       <div class="home-img">
-        <img src="images/home2.png" alt="">
+        <img src="images/home.png" alt="homeImg">
       </div>
     </section>
 
     <!-- about section design -->
     <section class="about" id="about">
       <div class="about-img">
-        <source src="images/avatar.mp4" type="video/mp4">
-        <img src="images/vidio-output.gif" alt="avatarGif" spe>
+        <img src="images/avatar.gif" alt="avatarGif">
       </div>
 
       <div class="about-content">
         <h2 class="heading">Sobre <span>mí</span></h2>
-        <h3>Soy Técnico Superior de Desarrollo de Aplicaciones Multiplataforma. Actualmente estoy cursando el grado de Ingeniería Informática en el campus de la UCLM en Ciudad Real.</h3>
-        <p>Me encuentro en continua formación, con muchas ganas de adquirir nuevas habilidades y conocimientos.
-          Me considero una persona trabajadora, sociable, responsable y con determinación. Me adapto con facilidad a los cambios y al trabajo en equipo.</p>
-        <a href="#contact" class="btn">Contáctame</a>
+        <h3><a title="TecnicoInfoLink" rel="noopener" href="https://todofp.es/que-estudiar/loe/informatica-comunicaciones/des-aplicaciones-multiplataforma.html" target="_blank">Soy Técnico Superior de Desarrollo de Aplicaciones Multiplataforma.</a></h3>
+        <p>Actualmente estoy cursando el grado de Ingeniería Informática en el campus de la <a title="uclmLink" rel="noopener" href="https://www.uclm.es/" target="_blank">UCLM</a> en Ciudad Real. Me encuentro en continua formación, con muchas ganas de adquirir nuevas habilidades y conocimientos.
+          Busco una oportunidad de empleo que me ayude tanto a crecer profesionalmente como a finalizar mis estudios.
+        </p>
+        <h3><span>Aptitudes</span></h3>
+        <div class="aptitudes-container">
+          <div class="aptitudes-box">
+            <img width="48" height="48" src="https://img.icons8.com/color/48/man_reading_a_book.png" alt="man_reading_a_book"/>
+            <p>Autodidacta</p>
+          </div>
+          <div class="aptitudes-box">
+            <img width="48" height="48" src="https://img.icons8.com/external-vectorslab-flat-vectorslab/53/external-Employee-Turnover-human-resource-vectorslab-flat-vectorslab-2.png" alt="external-Employee-Turnover-human-resource-vectorslab-flat-vectorslab-2"/>
+            <p>Adaptable</p>
+          </div>
+          <div class="aptitudes-box">
+            <img width="48" height="48" src="https://img.icons8.com/color/48/coworking.png" alt="coworking"/>
+            <p>Trabajo en equipo</p>
+          </div>
+          <div class="aptitudes-box">
+            <img width="48" height="48" src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-determination-home-based-business-flaticons-lineal-color-flat-icons.png" alt="external-determination-home-based-business-flaticons-lineal-color-flat-icons"/>
+            <p>Determinación</p>
+          </div>
+        </div>
+        <a href="#contact" class="btn-contact">Contáctame</a>
+        
+        <div class="about-contact">
+          <img src="images/avatar.gif" alt="avatarGif">
+          <a href="#contact" class="btn">Contáctame</a>
+        </div>
       </div>
     </section>
 
     <!-- education section design -->
     <section class="education" id="education">
       <h2 class="heading">Mi <span>Formación</span></h2>
+      <p class="section-description">Aquí podréis encontrar la información sobre mi formación académica</p>
 
       <div class="education-row">
         <div class="education-column">
@@ -75,14 +101,14 @@
 
           <div class="education-box">
             <div class="education-content">
-              <div class="content">
+              <div class="content" onclick="window.open('http://www.ies-azarquiel.es/images/oferta_educativa/dipticoDAM.pdf')">
                 <div class="year"><i class="bx bxs-calendar"></i> 2017 - 2019</div>
                 <h3>Técnico Superior de Desarrollo de Aplicaciones Multiplataforma</h3>
                 <p>IES Azarquiel (TO)</p>
               </div>
             </div>
             <div class="education-content">
-              <div class="content">
+              <div class="content" onclick="window.open('https://www.uclm.es/estudios/grados/ingenieria-informatica')">
                 <div class="year"><i class="bx bxs-calendar"></i> 2019 - Actualidad</div>
                 <h3>Grado en Ingeniería Informática</h3>
                 <p>Universidad de Castilla La Mancha - Escuela Superior de informática (CR)</p>
@@ -95,13 +121,13 @@
         </div>
 
         <div class="education-column">
-          <h3 class="tittle">Complementaria</h3>
+          <h3 class="tittle">Idiomas</h3>
 
           <div class="education-box">
             <div class="education-content">
-              <div class="content">
+              <div class="content" onclick="window.open('https://www.trinitycollege.com/qualifications/english-language/ISE/ISE-II-B2-resources')">
                 <div class="year"><i class="bx bxs-calendar"></i> 2021 - 2022</div>
-                <h3>ISE II (B2)</h3>
+                <h3>Trinity ISE II (B2)</h3>
                 <p>Trinity College - Escuela Inglesa</p>
               </div>
             </div>
@@ -113,6 +139,7 @@
     <!-- services section design -->
     <section class="conocimientos" id="conocimientos">
       <h2 class="heading">Conocimientos <span>Técnicos</span></h2>
+      <p class="section-description">Aquí puedes encontrar algunas de las tecnologías que he utilizado en mi formación</p>
 
       <div class="conocimientos-container">
         <div class="conocimientos-box">
@@ -139,8 +166,8 @@
             </div>    
             <div class="item">
               <div class="item-wrapper">
-                <img width="96" height="96" src="https://cdn.iconscout.com/icon/free/png-256/free-microsoft-dot-net-1-1175179.png" alt="python"/>
-                <p>Python</p>
+                <img width="96" height="96" src="https://img.icons8.com/color/96/c-sharp-logo.png" alt="c-sharp-logo"/>
+                <p>C#</p>
               </div>
             </div>       
           </div>
@@ -184,7 +211,7 @@
             <div class="item">
               <div class="item-wrapper">
                 <img width="96" height="96" src="https://img.icons8.com/color/96/html-5--v1.png" alt="html-5"/>
-                <p>HTML 5</p>
+                <p>HTML5</p>
               </div>
             </div>          
             <div class="item">
@@ -227,7 +254,7 @@
             <div class="item">
               <div class="item-wrapper">
                 <img width="96" height="96" src="https://code.visualstudio.com/assets/apple-touch-icon.png" alt="visualstudio-code"/>
-                <p>VisualStudio Code</p>
+                <p>Code</p>
               </div>
             </div>
             <div class="item">
@@ -268,68 +295,67 @@
               </div>
             </div>          
           </div>
-        </div>
-        
-        
+        </div>        
       </div>
     </section>
 
     <!-- portfolio section design -->
     <section class="portfolio" id="portfolio">
       <h2 class="heading">Mis <span>Projectos</span></h2>
+      <p class="section-description">Aquí puedes comprobar algunos de los trabajos que he realizado a lo largo de mi trayectoria</p>
 
       <div class="portfolio-container">
         <div class="portfolio-box">
-          <img src="images/isi-Maps.png" alt="isi-SpotiMaps">
+          <img src="images/isi-Maps.png" alt="isi-SpotiMapsImg">
           <div class="portfolio-layer">
             <h4>SpotiMaps</h4>
             <p>Trabajo con el objetivo de realizar búsquedas de conciertos populares en un determinado país, seleccionando mediante un mapa. Usando las API de Spotify, GeoApify y TicketMaster</p>
-            <a href="https://github.com/NLopezT04/isi-SpotiMaps"><i class="bx bx-link-external"></i></a>
+            <a title="proyectoSpotiMaps" rel="noopener" href="https://github.com/NLopezT04/isi-SpotiMaps" target="_blank"><i class="bx bx-link-external"></i></a>
           </div>
         </div>
         
         <div class="portfolio-box">
-          <img src="images/portfolio2.jpg" alt="">
+          <img src="images/la_liga.jpg" alt="laLigaImg">
           <div class="portfolio-layer">
-            <h4>Web Design</h4>
-            <p>asdasdasdasdasd</p>
-            <a href="#"><i class="bx bx-link-external"></i></a>
+            <h4>JPA La-Liga</h4>
+            <p>Trabajo con el objetivo de obtener los resultados de la jornada ligera. Usando JPA, Hibernate y Ajax</p>
+            <a title="proyectoLaLiga" rel="noopener" href="https://github.com/NLopezT04/JPALaLiga2019" target="_blank"><i class="bx bx-link-external"></i></a>
           </div>
         </div> 
         
         <div class="portfolio-box">
-          <img src="images/portfolio3.jpg" alt="">
+          <img src="images/MovieApp.png" alt="movieAppImg">
           <div class="portfolio-layer">
-            <h4>Web Design</h4>
-            <p>asdasdasdasdasd</p>
-            <a href="#"><i class="bx bx-link-external"></i></a>
+            <h4>Movie App</h4>
+            <p>Trabajo con el objetivo de desarollar una app de búsqueda de películas y cines donde la estrenan. App desarrollada en Kotlin con Android Studio y Firebase</p>
+            <a title="proyectoMovie" rel="noopener" href="https://github.com/NLopezT04/Movie-App" target="_blank"><i class="bx bx-link-external"></i></a>
           </div>
         </div> 
 
         <div class="portfolio-box">
-          <img src="images/portfolio4.jpg" alt="">
+          <img src="images/google-dino.jpg" alt="googleDinoImg">
           <div class="portfolio-layer">
-            <h4>Web Design</h4>
-            <p>asdasdasdasdasd</p>
-            <a href="#"><i class="bx bx-link-external"></i></a>
+            <h4>Google Dino</h4>
+            <p>Trabajo con el objetivo de desarrollar el juego Google Dino. Usando Unity</p>
+            <a title="proyectoDino" rel="noopener" href="https://github.com/NLopezT04/Google-Dino" target="_blank"><i class="bx bx-link-external"></i></a>
           </div>
         </div> 
 
         <div class="portfolio-box">
-          <img src="images/portfolio5.jpg" alt="">
+          <img src="images/metro-madrid.png" alt="metroImg">
           <div class="portfolio-layer">
-            <h4>Web Design</h4>
-            <p>asdasdasdasdasd</p>
-            <a href="#"><i class="bx bx-link-external"></i></a>
+            <h4>MetroSwift</h4>
+            <p>Trabajo con el objetivo de desarrollar una app para visualizar el mapa del metro de Madrid. Usando Swift y SQLite</p>
+            <a title="proyectoMetro" rel="noopener" href="https://github.com/NLopezT04/MetroSQLite" target="_blank"><i class="bx bx-link-external"></i></a>
           </div>
         </div> 
 
         <div class="portfolio-box">
-          <img src="images/portfolio6.jpg" alt="">
+          <img src="images/pokeball.png" alt="pokeballImg">
           <div class="portfolio-layer">
-            <h4>Web Design</h4>
-            <p>asdasdasdasdasd</p>
-            <a href="#"><i class="bx bx-link-external"></i></a>
+            <h4>Pokemon-UWP</h4>
+            <p>Trabajo con el objetivo de desallorar diferentes minijuegos pokemon. Usando UWP</p>
+            <a title="proyectoPokemon" rel="noopener" href="https://github.com/NLopezT04/Pokemon-UWP" target="_blank"><i class="bx bx-link-external"></i></a>
           </div>
         </div>   
       </div>
@@ -341,14 +367,30 @@
     <section class="contact" id="contact">
       <h2 class="heading">Mi <span>Contacto</span></h2>
 
-      <form action="https://formspree.io/f/mvojerzz" method="POST">       
-        <input type="text" name="Name" placeholder="Nombre completo" required>
-        <input type="email" name="Email" placeholder="Dirección email" required>   
-        <input type="number" name="Number" placeholder="Número de teléfono (opcional)">
-        <input type="text" placeholder="Agregar un asunto">
-        <textarea name="Message" cols="30" rows="10" placeholder="Escríbeme un mensaje..." required></textarea>
-        <button type="submit" value="Send Message" class="btn">Enviar</button>
-      </form>
+      <div class="profile-card">
+        <div class="wrapper">
+          <div class="card front-face">
+             <img src="images/me.jpeg" alt="frontFaceImg">
+          </div>
+          <div class="card back-face">
+             <img src="images/me.jpeg" alt="backFaceImg">
+             <div class="info">
+                <div class="title">
+                  Néstor López Torres
+                </div>
+                <p>
+                   Estudiante en <br>Universidad de Castilla la Mancha
+                </p>
+             </div>
+             <ul>
+              <a title="email" href="mailto:nestor.lopez.dev@gmail.com"><i class="bx bxl-gmail bx-lg"></i></a>
+              <a title="linkedin" rel="noopener" href="https://www.linkedin.com/in/n%C3%A9stor-l%C3%B3pez-torres-160a02161/" target="_blank"><i class="bx bxl-linkedin bx-lg" ></i></a>
+              <a title="github" rel="noopener" href="https://github.com/NLopezT04?tab=repositories" target="_blank"><i class="bx bxl-github bx-lg"></i></a>
+              <a title="cv" rel="noopener" href="https://drive.google.com/file/d/1T03W5PhVdcKcDenW3VCK9pFRwdU3KaPd/view?usp=drive_link" target="_blank"><i class='bx bxs-file-pdf bx-lg'></i></a>
+             </ul>
+          </div>
+       </div>
+      </div>   
     </section>
 
     <!-- footer design -->
@@ -358,7 +400,7 @@
       </div>
 
       <div class="footer-iconTop">
-        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+        <a title="flechaHome" href="#"><i class="bx bx-up-arrow-alt"></i></a>
       </div>
     </footer>
 
